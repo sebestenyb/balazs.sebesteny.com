@@ -1,0 +1,1 @@
+{"id":"f6ddf82a-2a34-444c-bfda-407dd7b2e627","timestamp":1721440012403,"matcher":{"static":{"/api/search":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/","/blog/laravel-pipelines","/blog/_dir"]}

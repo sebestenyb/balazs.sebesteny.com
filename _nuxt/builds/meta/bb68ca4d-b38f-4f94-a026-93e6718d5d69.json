@@ -1,1 +1,0 @@
-{"id":"bb68ca4d-b38f-4f94-a026-93e6718d5d69","timestamp":1721430599557,"matcher":{"static":{"/api/search":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/","/introduction/getting-started","/introduction/project-structure","/api/layouts","/introduction/writing-pages","/introduction/configuration","/api/composables","/api/components"]}

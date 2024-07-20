@@ -13,7 +13,9 @@ export default defineNuxtConfig({
             langs: ['json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml', 'php']
         },
     },
-
-    modules: ["@nuxthq/studio", "@nuxtjs/tailwindcss", "@nuxt/fonts"]
+    gtag: {
+        id: 'G-D1T7EBYYH4'
+    },
+    modules: ["@nuxthq/studio", "@nuxtjs/tailwindcss", "@nuxt/fonts", "nuxt-gtag"]
 
 })

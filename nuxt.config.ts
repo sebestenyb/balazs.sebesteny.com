@@ -25,7 +25,7 @@ export default defineNuxtConfig({
             releaseStage: process.env.NODE_ENV,
             appVersion: 'v0.0',      
         }
-    }
+    },
     modules: [
         "@nuxthq/studio",
         "@nuxtjs/tailwindcss",

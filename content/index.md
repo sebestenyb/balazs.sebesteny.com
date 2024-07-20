@@ -1,0 +1,98 @@
+---
+title: Home
+navigation: false
+layout: page
+main:
+  fluid: false
+---
+
+:ellipsis{right=0px width=75% blur=150px}
+
+::block-hero
+---
+cta:
+  - Get started
+  - /blog/laravel-pipelines
+<!-- secondary:
+  - Open on GitHub →
+  - https://github.com/nuxt-themes/docus -->
+---
+
+#title
+Senior Software Engineer
+
+#description
+**Results-oriented** Software Developer with 20 years of experience across the full software development lifecycle. Proven leadership in both agency and SaaS startup environments. Foster a collaborative and growth-oriented work ethic, with a passion for mentoring and knowledge sharing. Highly organised and analytical, with a demonstrated ability to quickly learn and adapt to new technologies.
+
+#extra
+  ::list
+  - Software and product development: **20 years**
+  - MySQL: **15 years**
+  - Object-Oriented languages: **15 years**
+  - Laravel/VueJS: **10 years** *(experience with Symfony and Zend, React, TypeScript)*
+  - NoSQL: **5 years** *(ElasticSearch, MongoDB, Redis)*
+  - DevOps: **10 years** *(AWS, DigitalOcean and Google Cloud, Docker and Terraform)*
+  ::
+
+#support
+  ::terminal
+  ---
+  content:
+  - npx nuxi@latest init -t themes/docus
+  - cd docs
+  - npm install
+  - npm run dev
+  ---
+  ::
+::
+
+::card-grid
+#title
+My experiences
+
+#root
+:ellipsis{left=0px width=40rem top=10rem blur=140px}
+
+#default
+  ::card{icon=IconNuxtStudio}
+  #title
+  API design
+  #description
+  Experience in API design, microservices and SPAs.
+  ::
+
+  ::card{icon=logos:vue}
+  #title
+  High Scalability
+  #description
+  Development and integration for high-load scalable systems.
+  ::
+
+  ::card{icon=simple-icons:markdown}
+  #title
+  Database performance tuning
+  #description
+  Proven expertise with database performance tuning.
+  ::
+
+  ::card{icon=logos:nuxt-icon}
+  #title
+  AWS products
+  #description
+  AWS products (S3, EC2, EBS, Lambda, RDS and Aurora, SQS, SES),
+  ::
+
+  ::card{icon=noto:rocket}
+  #title
+  Continuous integration
+  #description
+  Continuous integration approaches, such as automated testing and deployment, code style checking, automated load testing
+  ::
+
+  ::card{icon=noto:puzzle-piece}
+  #title
+  Error/performance monitoring
+  #description
+  Error/performance monitoring
+  ::
+::

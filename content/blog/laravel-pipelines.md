@@ -1,0 +1,171 @@
+# Laravel Pipelines
+
+In one of my regular code cleaning sessions I found a piece of code in our controller very similar to this picture:
+
+![sample code](/images/SCR-20240520-myyy.png)
+
+It looks clean and readable, but the code just went on and on, and made the understanding of the *controller* code much harder than it needs to be.
+
+In this case all I needed to know was that we have an incomin request with parameters, and we have to filter our query based on the different parameters.
+There is absolutely no need to keep all the implementation details in the controller.
+
+::alert{type="info"}
+So how to tackle this?
+::
+
+We can extract our various filters to pipes, and send our base query through them:
+
+```php
+class BookingController extends Controller
+{
+    public function index(ListBookingsRequest $request): AnonymousResourceCollection
+    {
+        $bookings = app(Pipeline::class)
+            ->send(Booking::query())
+            ->through(pipes: [
+                FilterByDateRange::class,
+                FilterByRescheduleIdentifier::class,
+                FilterByGroupIdentifier::class,
+                FilterBySequenceIdentifier::class,
+                FilterByBookingFormIdentifier::class,
+                FilterByClients::class,
+                FilterByStatus::class,
+                FilterByTransportRequirement::class,
+                FilterByRegion::class,
+                FilterByAllocation::class,
+                FilterByUuid::class,
+                FilterOnlyTrashed::class,
+                OrderBookings::class,
+                SearchBookings::class,
+            ])
+            ->thenReturn()
+            ->paginate();
+
+        return BookingResource::collection($bookings);
+    }
+}
+```
+The problem arises when we need to pass multiple arguments to our filter classes, in our cases we need to pass the `request` in order to extract the filter parameters:
+
+```php
+class FilterByDateRange
+{
+    public function __invoke(Builder $query, Closure $next): Builder
+    {
+        return $next($query)
+            ->when(
+                value: $this->request->filled('date'),
+                callback: function (Builder $q) {
+                    $date = Carbon::parse($this->request->validated('date'), organisation_timezone());
+                    return $q->whereBetween(
+                        column: 'date',
+                        values: [
+                            $date->clone()->startOfDay()->utc()->toDateTimeString(),
+                            $date->clone()->endOfDay()->utc()->toDateTimeString(),
+                        ]
+                    );
+                }
+            );
+    }
+}
+```
+One option is to use DTOs, constructed from the base query, and the various request fields we need.
+
+The other option is to rely on Laravel's service container to inject the request instance to our filters.
+By simply typing a `FormRequest $request` in our consturctor, we instruct Laravel to inject the current form request:
+
+
+```php
+class FilterByDateRange
+{
+    public function __construct(protected FormRequest $request)
+    {
+    }
+
+    //...
+}
+```
+We need to use `FormRequest` as a type, so we have access to the `validated` method.
+Here's our redacted form request class:
+
+```php
+class ListBookingsRequest extends FormRequest
+{
+    public function authorize(): bool
+    {
+        return $this->user()->can('viewAny', Booking::class);
+    }
+
+    public function rules(): array
+    {
+        return [
+            // ...
+            'clients' => ['sometimes', 'array'],
+            'clients.*' => ['sometimes', Rule::exists((new Client())->getTable(), 'uuid')],
+            // ...
+            'uuids.*' => ['sometimes', Rule::exists((new Booking())->getTable(), 'uuid')],
+            'date' => ['bail', 'nullable', 'string', 'max:255', 'date'],
+            // ...
+            'status_filter' => ['nullable', 'array'],
+            'status_filter.*' => ['nullable', 'string', 'max:255', Rule::in(BookingStatus::values())],
+            // ...
+            'transport_requirements' => ['sometimes', 'array'],
+            'transport_requirements.*.code' => ['required', Rule::exists((new TransportRequirement())->getTable(), 'code')],
+        ];
+    }
+}
+
+```
+There is only one problem with this approach,which we learnt the hard way.
+Laravel will inject a *new* instance of the request for every filter class instance.
+
+::alert{type="info"}
+Why it is a problem?
+::
+
+For two reasons in our form request: our `authorize` method, and our `exists` and `in` rules.
+Both the `authorize` method and the various rules will execute database queries for each instance of the request.
+
+::alert{type="danger"}
+In our case 5 queries per request instance used in 14 different filters: **70 queries**. 
+::
+
+
+While this was a fairly obscure bug to track down, the fix is relatively easy: 
+
+::alert{type="success"}
+Do not relay on the service container, but **pass the request manually** to the filters:
+::
+
+
+```php
+class BookingController extends Controller
+{
+    public function index(ListBookingsRequest $request): AnonymousResourceCollection
+    {
+        $bookings = app(Pipeline::class)
+            ->send(Booking::query())
+            ->through(pipes: [
+                new FilterByRescheduleIdentifier($request),
+                new FilterByGroupIdentifier($request),
+                new FilterBySequenceIdentifier($request),
+                new FilterByBookingFormIdentifier($request),
+                new FilterByClients($request),
+                new FilterByDate($request),
+                new FilterByDateRange($request),
+                new FilterByStatus($request),
+                new FilterByTransportRequirement($request),
+                new FilterByRegion($request),
+                new OrderBookings($request),
+                new SearchBookings($request),
+                new FilterByAllocation($request),
+                new FilterByUuid($request),
+                new FilterOnlyTrashed($request),
+            ])
+            ->thenReturn()
+            ->paginate();
+
+        return BookingResource::collection($Booking);
+    }
+}
+```

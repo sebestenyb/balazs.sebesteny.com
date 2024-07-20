@@ -15,10 +15,12 @@
     "@nuxt/eslint-config": "^0.3.13",
     "@nuxt/fonts": "^0.7.1",
     "@nuxthq/studio": "^2.0.3",
+    "@nuxtjs/sentry": "^8.0.7",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@types/node": "^20.12.12",
     "eslint": "^9.3.0",
     "nuxt": "^3.11.2",
+    "nuxt-bugsnag": "^7.3.0",
     "nuxt-gtag": "^2.0.7"
   }
 }

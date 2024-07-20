@@ -1,5 +1,4 @@
 export default defineNuxtConfig({
-    // https://github.com/nuxt-themes/docus
     extends: ['@nuxt-themes/docus'],
     devtools: { enabled: true },
 
@@ -16,6 +15,23 @@ export default defineNuxtConfig({
     gtag: {
         id: 'G-D1T7EBYYH4'
     },
-    modules: ["@nuxthq/studio", "@nuxtjs/tailwindcss", "@nuxt/fonts", "nuxt-gtag"]
+    bugsnag: {
+        publishRelease: true,
+        baseUrl: 'https://balazs.sebesteny.com',    
+        disableLog: true,
+        config: {
+            apiKey: '624e309899621114dfd5eb224cbe2c21',
+            enabledReleaseStages: ['production'],
+            releaseStage: process.env.NODE_ENV,
+            appVersion: 'v0.0',      
+        }
+    }
+    modules: [
+        "@nuxthq/studio",
+        "@nuxtjs/tailwindcss",
+        "@nuxt/fonts",
+        "nuxt-gtag",
+        "nuxt-bugsnag"
+    ]
 
 })

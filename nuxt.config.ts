@@ -17,21 +17,28 @@ export default defineNuxtConfig({
     },
     bugsnag: {
         publishRelease: true,
-        baseUrl: 'https://balazs.sebesteny.com',    
+        baseUrl: 'https://balazs.sebesteny.com',
         disableLog: true,
         config: {
             apiKey: '624e309899621114dfd5eb224cbe2c21',
             enabledReleaseStages: ['production'],
             releaseStage: process.env.NODE_ENV,
-            appVersion: 'v0.0',      
+            appVersion: 'v0.0',
         }
+    },
+    site: {
+        url: 'https://balazs.sebesteny.com',
+        name: 'Balazs Sebesteny - Senior Laravel/VueJS Engineer',
+        description: 'Results-oriented Software Developer with 20 years of experience across the full software development lifecycle.',
+        defaultLocale: 'en',
     },
     modules: [
         "@nuxthq/studio",
-        "@nuxtjs/tailwindcss",
         "@nuxt/fonts",
         "nuxt-gtag",
-        "nuxt-bugsnag"
+        "nuxt-bugsnag",
+        "@nuxtjs/seo",
+        "@nuxt/ui"
     ]
 
 })

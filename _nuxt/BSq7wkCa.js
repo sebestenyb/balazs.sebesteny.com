@@ -1,2 +1,0 @@
-import r from"./OKg4glJ3.js";import{l as e,X as m,c as p,w as n,Z as c}from"./BN6rZbHV.js";import"./CYBjYLP7.js";import"./BNuwz4_B.js";import"./Dfe1Df2_.js";import"./BexgfS0J.js";import"./2ETV-d1z.js";import"./BFJ0jbRY.js";import"./rYJKJAFx.js";import"./DSX6WnOu.js";import"./BZLvIJhR.js";import"./D4Z0fIGL.js";import"./Cx4PQpFr.js";const i={};function a(t,s){const o=r;return p(),m(o,null,{default:n(()=>[c(t.$slots,"default")]),_:3})}const D=e(i,[["render",a]]);export{D as default};
-//# sourceMappingURL=BSq7wkCa.js.map

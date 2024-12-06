@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         baseUrl: 'https://balazs.sebesteny.com',
         disableLog: true,
         config: {
-            apiKey: '624e309899621114dfd5eb224cbe2c21',
+            apiKey: '46e58351ae92485ea49d0c5ca120cd4a',
             enabledReleaseStages: ['production'],
             releaseStage: process.env.NODE_ENV,
             appVersion: 'v0.0',

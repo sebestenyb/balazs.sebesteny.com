@@ -69,6 +69,8 @@ jobs:
       - name: Generate
         run: npx nuxi build --preset github_pages
         env:
+          BUGSNAG_API_KEY: ${{ secrets.BUGSNAG_API_KEY }}
+          GTAG_ID: ${{ secrets.GTAG_ID }}
           NUXT_PUBLIC_STUDIO_API_URL: https://api.nuxt.studio
           
 

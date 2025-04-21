@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
 
     gtag: {
-        id: 'G-D1T7EBYYH4'
+        id: process.env.GTAG_ID
     },
 
     bugsnag: {
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         baseUrl: 'https://balazs.sebesteny.com',
         disableLog: true,
         config: {
-            apiKey: '79f61294679990edf972a59ba9135b81',
+            apiKey: process.env.BUGSNAG_API_KEY,
             enabledReleaseStages: ['production'],
             releaseStage: process.env.NODE_ENV,
             appVersion: 'v0.0',

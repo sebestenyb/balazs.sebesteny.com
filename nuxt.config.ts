@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         baseUrl: 'https://balazs.sebesteny.com',
         disableLog: true,
         config: {
-            apiKey: '46e58351ae92485ea49d0c5ca120cd4a',
+            apiKey: '79f61294679990edf972a59ba9135b81',
             enabledReleaseStages: ['production'],
             releaseStage: process.env.NODE_ENV,
             appVersion: 'v0.0',
@@ -35,7 +35,6 @@ export default defineNuxtConfig({
         description: 'Results-oriented Software Developer with 20 years of experience across the full software development lifecycle.',
         defaultLocale: 'en',
     },
-
     modules: [
         "@nuxthq/studio",
         "@nuxt/fonts",

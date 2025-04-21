@@ -33,7 +33,7 @@ export default defineAppConfig({
             credits: {
                 icon: 'game-icons:beard',
                 text: 'Built with by sebestenyb',
-                href: 'https://balazs.sebesteny.com'
+                href: '/'
             }
         }
     }

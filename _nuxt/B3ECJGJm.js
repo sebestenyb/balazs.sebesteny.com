@@ -1,0 +1,2 @@
+import{r as e}from"./DHJ8BtJx.js";import{d as r,c as a,h as s,X as d,e as i,i as c,t as l,k as n}from"./B9rIc7Ko.js";import"./76o_WpOd.js";const p={class:"card-grid"},_={class:"title"},u={class:"layout"},f=r({__name:"CardGrid",props:{title:{type:String,default:"Features"}},setup(o){return(t,m)=>(i(),a("section",p,[e(t.$slots,"root",{},void 0,!0),s("h2",_,[e(t.$slots,"title",{unwrap:"p"},()=>[c(l(o.title),1)],!0)]),s("div",u,[d(t.$slots,"default",{},void 0,!0)])]))}}),$=n(f,[["__scopeId","data-v-2cd55f41"]]);export{$ as default};
+//# sourceMappingURL=B3ECJGJm.js.map

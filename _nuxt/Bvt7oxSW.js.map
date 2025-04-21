@@ -1,0 +1,1 @@
+{"version":3,"file":"Bvt7oxSW.js","sources":["../../../../node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue"],"sourcesContent":["<template>\n  <tbody>\n    <slot />\n  </tbody>\n</template>\n"],"names":["_cache","_openBlock","_createElementBlock"],"mappings":"+EAAUA,EAAA,QAAAC,EAAA,EAAAC,EAAA,QAAA,KAAA","x_google_ignoreList":[0]}

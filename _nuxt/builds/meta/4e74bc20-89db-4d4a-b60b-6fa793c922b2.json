@@ -1,0 +1,1 @@
+{"id":"4e74bc20-89db-4d4a-b60b-6fa793c922b2","timestamp":1745209184107,"matcher":{"static":{"/api/search":{"prerender":true}},"wildcard":{},"dynamic":{}},"prerendered":["/","/getting-started","/laravel/laravel-pipelines","/git/git-worktree","/vue/vue-props"]}

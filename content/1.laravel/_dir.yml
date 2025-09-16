@@ -1,2 +1,2 @@
 icon: catppuccin:laravel
-navigation.redirect: /laravel/laravel-pipelines
+navigation.redirect: /laravel/cache-if-exists

@@ -1,0 +1,46 @@
+---
+title: Cache If Exists
+description:   A very useful snippet to cache only existing results
+---
+
+# Cache If Exists
+
+When working with either heavy queries or external APIs, caching the result can be a massive performance gain. Caching not-so frequently changing data is not just cost savings on the server side, but a much better user experience for our clients.
+
+One caveat is that sometimes these scenarios can result empty results, for a variatey of reasons. The external API can be down, the query can yield no result yet. We most likely don't want to cache the empty results (or error responses), and serve no results for the users, or prevent any further attempts for a lengthy period.
+
+Thanks to the `Macroable` trait of the `Cache` facade, the following neat little snippet can be a solution:
+
+```php
+Cache::macro(
+    'rememberIfExists',
+    function (string $key, Closure|DateInterval|DateTimeInterface|int|null $ttl, callable $callback) {
+        $result = $callback();
+
+        return empty($result) ? $result : $this->remember($key, $ttl, fn () => $result);
+    }
+);
+```
+
+Usage is the same as the standard Laravel cache call:
+
+```php
+> cache()->rememberIfExists('fubar', 300, fn() => 'fubar')
+= "fubar"
+
+> cache()->has('fubar')                                   
+= true
+
+> cache()->pull('fubar')                                  
+= "fubar"
+
+> cache()->rememberIfExists('fubar', 300, fn() => null)
+= null
+
+> cache()->has('fubar')                                
+= false
+
+> cache()->pull('fubar')                               
+= null
+```
+

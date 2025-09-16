@@ -1,2 +1,0 @@
-import{d as t,c as o,t as n,e as a}from"./B9rIc7Ko.js";const c={class:"component-playground-data-section"},m=t({__name:"ComponentPlaygroundTokens",props:{componentData:{type:Object,required:!0}},setup(e){return(s,r)=>(a(),o("div",c,n(e.componentData),1))}});export{m as _};
-//# sourceMappingURL=DwEEkJG5.js.map

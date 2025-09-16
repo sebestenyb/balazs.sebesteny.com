@@ -1,0 +1,1 @@
+{"version":3,"file":"cZp8uUFb.js","sources":["../../../node_modules/@nuxt-themes/typography/components/global/ProseTbody.vue"],"sourcesContent":["<template>\n  <tbody>\n    <slot />\n  </tbody>\n</template>\n"],"names":["_createElementBlock","_renderSlot","_ctx"],"mappings":"sFAAUA,EAAA,QAAA,KAAA,CAAAC,EAAAC,EAAA,OAAA,SAAA","x_google_ignoreList":[0]}

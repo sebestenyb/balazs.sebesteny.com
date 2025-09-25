@@ -1,5 +1,5 @@
 {
-  "name": "docus-starter",
+  "name": "balazs.sebesteny.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -18,7 +18,7 @@
     "@nuxthq/studio": "^2.0.3",
     "@nuxtjs/seo": "^3.0.3",
     "@nuxtjs/tailwindcss": "^6.12.1",
-    "@types/node": "^22.14.1",
+    "@types/node": "^24.5.2",
     "eslint": "^9.3.0",
     "nuxt": "^3.11.2",
     "nuxt-bugsnag": "^8.4.0",

@@ -32,7 +32,7 @@ export default defineAppConfig({
         footer: {
             credits: {
                 icon: 'game-icons:beard',
-                text: 'Built with by sebestenyb',
+                text: 'Built by sebestenyb',
                 href: '/'
             }
         }

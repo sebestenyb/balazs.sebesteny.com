@@ -58,7 +58,7 @@
     },
     {
       "name": "Instagram",
-      "url": "",
+      "url": "https://www.instagram.com/sebestenyb",
       "icon": "mdi:instagram",
       "showInContact": false
     },
@@ -66,7 +66,7 @@
       "name": "Twitter",
       "url": "https://x.com/sebestenyb",
       "icon": "mdi:twitter",
-      "showInContact": false
+      "showInContact": true
     }
   ]
 }

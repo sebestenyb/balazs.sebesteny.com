@@ -1,0 +1,72 @@
+{
+  "name": "Balazs Sebesteny",
+  "photoUrl": "favicon.svg",
+  "intro": "Strategic Principal Software Engineer & CTO with 20+ years of experience specializing in the PHP/Laravel ecosystem. Expert in architecting high-load SaaS platforms, integrating AI/NLP solutions, and leading cross-functional teams. Proven track record in modernizing legacy monoliths into microservices and scaling lead-generation engines to 5,000+ RPM.",
+  "introHtml": "Strategic <strong>Principal Software Engineer & CTO</strong> with 20+ years of experience specializing in the PHP/Laravel ecosystem. Expert in architecting high-load SaaS platforms, integrating AI/NLP solutions, and leading cross-functional teams. Proven track record in modernizing legacy monoliths into microservices and scaling lead-generation engines to 5,000+ RPM.",
+  "webpageTitle": "Balazs Sebesteny",
+  "resumeUrl": "https://balazs.sebesteny.com/pdf/balazs-sebesteny-resume.pdf",
+
+  "_comment": "Add your social links below. Leave the 'url' empty to hide the icon. Set 'showInContact' to true or false to control if it appears in the Contact section.",
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/sebestenyb",
+      "icon": "mdi:github",
+      "showInContact": true
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/sebestenyb",
+      "icon": "mdi:linkedin",
+      "showInContact": true
+    },
+    {
+      "name": "Leetcode",
+      "url": "#",
+      "icon": "devicon-plain:leetcode",
+      "showInContact": false
+    },
+    {
+      "name": "Behance",
+      "url": "#",
+      "icon": "devicon-plain:behance",
+      "showInContact": false
+    },
+    {
+      "name": "Email",
+      "url": "mailto:balazs@sebesteny.com",
+      "icon": "mdi:email",
+      "showInContact": true
+    },
+    {
+      "name": "Whatsapp",
+      "url": "https://wa.me/[YOUR_WHATSAPP_NUMBER]",
+      "icon": "mdi:whatsapp",
+      "showInContact": true
+    },
+    {
+      "name": "Facebook",
+      "url": "#",
+      "icon": "mdi:facebook",
+      "showInContact": false
+    },
+    {
+      "name": "Messenger",
+      "url": "#",
+      "icon": "mdi:facebook-messenger",
+      "showInContact": true
+    },
+    {
+      "name": "Instagram",
+      "url": "#",
+      "icon": "mdi:instagram",
+      "showInContact": false
+    },
+    {
+      "name": "Twitter",
+      "url": "https://x.com/sebestenyb",
+      "icon": "mdi:twitter",
+      "showInContact": false
+    }
+  ]
+}

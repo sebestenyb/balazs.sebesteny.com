@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Trips",
+    "description": "CareMaster is an Australian disability care management platform with a comprehensive feature list and an impressive customer base.",
+    "images": ["astro-01.webp", "astro-02.jpeg"],
+    "tech": ["Laravel", "VueJS"],
+    "platforms": ["web"],
+    "link": "https://trips-app.au",
+    "category": "Published Website"
+  },
+  {
+    "title": "Scrap IO",
+    "description": "Scrap IO is a Google Maps-based lead-generator with over 200 million places indexed and a 5000 requests per minute load.",
+    "images": ["astro-02.jpeg", "#"],
+    "tech": ["Laravel", "AWS Lambda", "MySQL"],
+    "platforms": ["apple-ios", "android"],
+    "link": "https://scrap.io",
+    "category": "Published Website"
+  }
+]

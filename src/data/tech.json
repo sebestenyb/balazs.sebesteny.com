@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "title": "Other",
+      "skills": [
+        { "name": "ElasticSearch", "level": 3, "icon": "skill-icons:elasticsearch-dark" },
+        { "name": "RabbitMQ", "level": 3, "icon": "skill-icons:rabbitmq-dark" },
+        { "name": "AWS", "level": 1, "icon": "skill-icons:aws-dark" }
+      ]
+    },
+    {
+      "title": "Frontend",
+      "skills": [
+        { "name": "VueJS", "level": 2, "icon": "skill-icons:vuejs-dark" },
+        { "name": "React", "level": 2, "icon": "skill-icons:react-dark" },
+        { "name": "Tailwind CSS", "level": 1, "icon": "skill-icons:tailwindcss-dark" }
+      ]
+    },
+    {
+      "title": "Backend",
+      "skills": [
+        { "name": "Laravel", "level": 2, "icon": "skill-icons:laravel-dark" },
+        { "name": "PHP", "level": 2, "icon": "skill-icons:php-dark" },
+        { "name": "Python", "level": 3, "icon": "skill-icons:python-dark" },
+        { "name": "Django", "level": 3, "icon": "skill-icons:django" }
+      ]
+    },
+    {
+      "title": "Database",
+      "skills": [
+        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
+        { "name": "MySQL", "level": 2, "icon": "skill-icons:mysql-dark" },
+        { "name": "MongoDB", "level": 2, "icon": "skill-icons:mongodb" }
+      ]
+    }
+  ]
+}

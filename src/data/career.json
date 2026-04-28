@@ -1,0 +1,26 @@
+[
+  {
+    "company": "CareMaster Global, Remote",
+    "role": "Principal Engineer",
+    "period": "May 2023 - Present",
+    "type": "Remote",
+    "description": "Architect and modernize full-stack features using Laravel and Vue.js, focusing on high-performance RESTful APIs and complex ACL permissions. Standardize coding practices and UI components to ensure codebase maintainability and scalability across a large customer base. Enforce high reliability through comprehensive automated test suites and detailed technical documentation.",
+    "skills": ["laravel", "VueJS", "MySQL", "Azure"]
+  },
+  {
+    "company": "Scrap IO",
+    "role": "Senior Technical Advisor",
+    "period": "June 2024 - Oct 2025",
+    "type": "Remote",
+    "description": "Directed architectural patterns for a high-traﬃc lead-generation engine handling 5,000 requests per minute. Built and deployed automated CI/CD pipelines and code quality tools using Laravel Vapor and AWS to ensure 24/7 availability for 200M+ indexed records.",
+    "skills": ["AWS", "Serverless", "Laravel", "Vapor", "MySQL"]
+  },
+  {
+    "company": "Hourstack LLC (acquired by ClickUp)",
+    "role": "Principal engineer",
+    "period": "Oct 2021 - March 2023",
+    "type": "Remote",
+    "description": "Architected and maintained a clean, high-performance, and standardized RESTful API core to support a global user base. Engineered seamless integrations for high-traﬃc third-party platforms including Asana, ClickUp, GitHub, Google Calendar, and Slack. Optimized and fine-tuned database performance to handle complex time-tracking data and multi-platform synchronization. Championed code quality by implementing a robust CI/CD pipeline for automated testing and deployments using Laravel Forge and Envoyer. Played a key role in the technical maturity of the product, contributing to its successful acquisition by ClickUp.",
+    "skills": ["Laravel", "NextJS", "MySQL", "React"]
+  }
+]

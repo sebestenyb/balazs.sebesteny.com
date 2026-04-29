@@ -46,5 +46,37 @@
     "type": "Auckland",
     "description": "Played a key role in the successful migration of a monolithic legacy system to a modern microservice architecture, enhancing scalability and agility. Contributed to many of the crucial core services, like finance, fulfilment, e-commerce, and central messaging. Worked in an agile environment as a lead developer.",
     "skills": ["Python", "Django", "RabbitMQ", "MySQL", "ElasticSearch"]
+  },
+  {
+    "company": "The Space In Between",
+    "role": "Lead developer",
+    "period": "Jan 2012 - Oct 2013",
+    "type": "Auckland",
+    "description": "Lead a team of developers, both internal and contractors. Helped the producers distribute work. Designed a system that enables rapid project development, safe deployment, and reliable maintenance in a changing environment.",
+    "skills": ["Zend", "PHP", "Wordpress", "MySQL"]
+  },
+  {
+    "company": "Futuretech Ltd",
+    "role": "Senior developer",
+    "period": "Jun 2010 - May 2011",
+    "type": "Auckland",
+    "description": "LeSpearheaded the platform's architecture, specializing in the resolution of complex challenges within video streaming and real-time messaging protocols. I led a strategic migration from high-cost proprietary technologies to a robust open-source stack, significantly reducing overhead while maintaining performance. Additionally, I orchestrated a comprehensive core refactor to support a new major SDK version, ensuring the system remained modern, secure, and extensible.",
+    "skills": ["Zend", "PHP", "Wordpress", "MySQL"]
+  },
+  {
+    "company": "UstreamTv (acquired by IBM)",
+    "role": "Senior developer",
+    "period": "Nov 2007 - Jan 2009",
+    "type": "Budapest",
+    "description": "Joined as an initial core engineer to design and build the platform’s foundational architecture. Key contributions include developing high-performance APIs that drove company revenue and executing a comprehensive rebuild of the flagship broadcaster application. I played a pivotal role in designing scalable media server clusters and server-side systems to optimize global bandwidth. To ensure reliability, I also engineered a suite of internal tools for stream testing and measurement.",
+    "skills": ["Adobe Flex", "Adobe Media Server", "Zend Framework", "MySQL"]
+  },
+  {
+    "company": "Jasmin Media Group",
+    "role": "Senior developer",
+    "period": "Feb 2006 - Nov 2007",
+    "type": "Budapest",
+    "description": "Recruited to lead stability and security initiatives during a pivotal growth phase. I focused on the high-concurrency programming of media servers and broadcaster applications, resolving deep-seated session management issues and implementing comprehensive DDoS and intrusion protection. Additionally, I built internal monitoring tools to empower support teams and collaborated on the engineering of the company’s scalable advertising platform.",
+    "skills": ["Adobe Flex", "Adobe Media Server", "Zend Framework", "MySQL"]
   }
 ]

@@ -22,5 +22,29 @@
     "type": "Remote",
     "description": "Architected and maintained a clean, high-performance, and standardized RESTful API core to support a global user base. Engineered seamless integrations for high-traﬃc third-party platforms including Asana, ClickUp, GitHub, Google Calendar, and Slack. Optimized and fine-tuned database performance to handle complex time-tracking data and multi-platform synchronization. Championed code quality by implementing a robust CI/CD pipeline for automated testing and deployments using Laravel Forge and Envoyer. Played a key role in the technical maturity of the product, contributing to its successful acquisition by ClickUp.",
     "skills": ["Laravel", "NextJS", "MySQL", "React"]
+  },
+  {
+    "company": "SWOOP Analytics",
+    "role": "Senior engineer",
+    "period": "Aug 2021 - Oct 2021",
+    "type": "Remote",
+    "description": "Create a scalable deployment system, an eﬃcient database, and a modern API. Write documentation. Ensure that the product and data end work together. Build components to work within the overall architecture laid out by SWOOP.",
+    "skills": ["PHP", "MySQL"]
+  },
+  {
+    "company": "Yabble (acquired by Global Insights Leader)",
+    "role": "Lead developer / VP of Engineering",
+    "period": "Oct 2018 - Dec 2020",
+    "type": "Auckland",
+    "description": "Pioneered the integration of LLM and NLP technologies to automate market research analysis and survey result synthesis. Designed a scalable SaaS infrastructure on AWS (Elastic Beanstalk, RDS, Aurora) capable of handling rapid data ingestion and real-time reporting.",
+    "skills": ["Laravel", "PHP", "MySQL", "AWS Lambda", "VueJS", "ElasticSearch"]
+  },
+  {
+    "company": "NZME",
+    "role": "Senior developer",
+    "period": "Oct 2013 - Dec 2015",
+    "type": "Auckland",
+    "description": "Played a key role in the successful migration of a monolithic legacy system to a modern microservice architecture, enhancing scalability and agility. Contributed to many of the crucial core services, like finance, fulfilment, e-commerce, and central messaging. Worked in an agile environment as a lead developer.",
+    "skills": ["Python", "Django", "RabbitMQ", "MySQL", "ElasticSearch"]
   }
 ]

@@ -20,7 +20,7 @@
   {
     "title": "Hourstack LLC",
     "description": "HourStack streamlines time and task management by oﬀering seamless integrations with popular tools like Asana, ClickUp, GitHub, Google Calendar, Slack, and more.",
-    "images": ["placeholder.jpg"],
+    "images": ["hourstack.png"],
     "tech": ["Laravel", "NextJS", "ReactSQL"],
     "platforms": ["web"],
     "link": "https://hourstack.com",

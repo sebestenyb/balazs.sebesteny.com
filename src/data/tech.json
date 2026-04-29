@@ -1,19 +1,12 @@
 {
   "categories": [
     {
-      "title": "Other",
-      "skills": [
-        { "name": "ElasticSearch", "level": 3, "icon": "skill-icons:elasticsearch-dark" },
-        { "name": "RabbitMQ", "level": 3, "icon": "skill-icons:rabbitmq-dark" },
-        { "name": "AWS", "level": 2, "icon": "skill-icons:aws-dark" }
-      ]
-    },
-    {
       "title": "Frontend",
       "skills": [
         { "name": "VueJS", "level": 3, "icon": "skill-icons:vuejs-dark" },
         { "name": "React", "level": 3, "icon": "skill-icons:react-dark" },
-        { "name": "Tailwind CSS", "level": 2, "icon": "skill-icons:tailwindcss-dark" }
+        { "name": "Tailwind", "level": 2, "icon": "skill-icons:tailwindcss-dark" },
+        { "name": "Bootstrap", "level": 3, "icon": "skill-icons:bootstrap" }
       ]
     },
     {
@@ -28,9 +21,19 @@
     {
       "title": "Database",
       "skills": [
-        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
         { "name": "MySQL", "level": 3, "icon": "skill-icons:mysql-dark" },
+        { "name": "Postgres", "level": 3, "icon": "skill-icons:postgresql-dark" },
+        { "name": "SQLite", "level": 3, "icon": "skill-icons:sqlite" },
         { "name": "MongoDB", "level": 2, "icon": "skill-icons:mongodb" }
+      ]
+    },
+    {
+      "title": "Other",
+      "skills": [
+        { "name": "ElasticSearch", "level": 3, "icon": "skill-icons:elasticsearch-dark" },
+        { "name": "RabbitMQ", "level": 3, "icon": "skill-icons:rabbitmq-dark" },
+        { "name": "AWS", "level": 2, "icon": "skill-icons:aws-dark" },
+        { "name": "Azure", "level": 2, "icon": "skill-icons:azure-dark" }
       ]
     }
   ]

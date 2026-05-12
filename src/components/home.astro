@@ -13,6 +13,7 @@ interface ProfileData {
   name: string;
   photoUrl: string;
   intro: string;
+  headline: string,
   introHtml: string;
   resumeUrl: string;
   socials: Social[];
@@ -36,7 +37,7 @@ if (isApiLive && BASE_URL) {
   data = localData as ProfileData;
 }
 
-const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
+const { name, photoUrl, intro, introHtml, headline, resumeUrl, socials } = data;
 ---
 
 <section id="home" class="flex flex-col items-center justify-center section-container md:pt-30 gap-1 min-h-[80vh] text-center">
@@ -62,10 +63,10 @@ const { name, photoUrl, intro, introHtml, resumeUrl, socials } = data;
     <h1 class="text-5xl md:text-7xl font-heading font-bold text-maintext tracking-tight">
       {name}
     </h1>
+    <h2 class="text-xl md:text-3xl font-heading text-maintext tracking-tight mt-5">{headline}</h2>
     <br>
-    <p 
-      class="text-gray font-body text-lg leading-relaxed" 
-      set:html={intro} 
+    <p class="text-gray font-body text-lg leading-relaxed" 
+      set:html={introHtml} 
     />
   </div>
 

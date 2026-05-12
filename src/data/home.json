@@ -1,6 +1,6 @@
 {
   "name": "Balazs Sebesteny",
-  "photoUrl": "sebi.png",
+  "photoUrl": "sebi.jpeg",
   "headline": "Strategic Engineering for Zero Comprehension Debt",
   "introHtml": "<p>With 20+ years of experience architecting high-load Laravel platforms, I provide something increasingly rare: <strong>Technical Autonomy</strong>. I deliver <span class='underline decoration-current/10 underline-offset-4'>human-authored, fully auditable code</span> designed for regulated environments where <em>\"the AI suggested it\"</em> is not a valid control. Every line I ship is a deliberate human judgment call I am prepared to defend in an audit or a 3:00 AM production incident.</p><p class='mt-4'>While I have deep experience integrating LLMs into products, I do not use them to write your core logic. I offer the security of <span class='underline decoration-current/10 underline-offset-4'>human-verified architecture</span> with a commitment to <strong>total code traceability</strong> that avoids the three-fold increase in vulnerabilities found in AI-assisted code, ensuring your system's foundation is built on 20 years of expertise, not a language model's guess.</p>",
   "webpageTitle": "Balazs Sebesteny | Principal Software Engineer & CTO | Laravel Expert",
